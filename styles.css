@@ -189,6 +189,11 @@ input[type="checkbox"] {
     margin-bottom: 1.5rem;;
   }
 
+@media (max-width:640px) {
+    .card {
+        max-width: 300px;
+}
+
 
  
   
