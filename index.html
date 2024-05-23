@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">    
+    <title>Document</title>
+</head>
+<body>
+
+    <form data-multi-step>
+        
+        <div class="card" data-step>
+            <h3 class="card-title">Register</h3>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" placeholder="enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="example@gmail.com">
+            </div>
+            <div class="button-container">
+                <button type="button" class="continue-btn" data-next>Continue</button>
+            </div>
+        </div>
+        <div class="card" data-step>
+            <h3 class="card-title">Which topics are you interested in?</h3>
+            <div class="form-group">
+                <input type="checkbox" id="one" name="products" value="Software Development" class="topic"/>
+                <label for="one">Software Development</label>
+                <input type="checkbox" id="two" name="products" value="User Experience" class="topic"/>
+                <label for="two">User Experience</label>
+                <input type="checkbox" id="three" name="products" value="Graphic Desginer" class="topic"/>
+                <label for="three">Graphic Desginer</label>
+
+            </div>
+            <div class="button-container">
+                <button type="button" id="submit" class="continue-btn" data-next>Submit</button>
+            </div>
+        </div>
+        <div class="card" data-step>
+            <h3 class="card-title">Summary</h3>
+            <div class="form-group">
+                <p class="user-name"> Name: <span class="span-name"></span></p>
+                <p class="user-email"> Email: <span class="span-email"></span></p>
+            </div>
+            <div class="list">
+                <h3>Topics:</h3>
+                <ul class="user-topic">
+                    
+                </ul>
+            </div>
+            <div class="button-container">
+                <button class="continue-btn" data-submit>Confirm</button>
+            </div>
+        </div>
+    </form>
+    <div class="container">
+        <div class="steps">
+            <p class="counter">Step 1 of 3</p>
+            <span class="circle active"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
